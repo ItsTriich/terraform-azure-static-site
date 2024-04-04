@@ -30,7 +30,7 @@ resource "azurerm_storage_blob" "blob" {
   storage_container_name = "$web"
   type                   = "Block"
   content_type           = "text/html"
-  source                 = file("${path.module}/site/index.html")
+  source_content         = var.source_content
 }
 
 

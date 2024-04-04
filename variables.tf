@@ -13,3 +13,7 @@ variable "storage-account-name" {
 variable "index_document" {
   description = "The index document of the static website"
 }
+
+variable "source_content" {
+  description = "This is the source content for the static website"
+}
